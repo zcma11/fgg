@@ -1,5 +1,5 @@
 module.exports = {
-  'get /': async ctx => {
-    ctx.body = '首页'
+  'get /': async app => {
+    app.ctx.body = '首页'
   }
 }
