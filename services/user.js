@@ -1,8 +1,8 @@
-module.exports = {
+module.exports = app => ({
   async getName() {
-    return 'abcdefg'
+    return await app.$model.user.findAll()
   },
   async getAge() {
     return 123
   }
-}
+})
